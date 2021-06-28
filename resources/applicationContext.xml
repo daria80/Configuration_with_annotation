@@ -5,6 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="myCat" class="spring_introduction.Cat" init-method="init" destroy-method="destroy" scope="singleton"></bean>
-    <bean id="myPerson" class="spring_introduction.Person"><constructor-arg ref="myCat"/></bean>
+    <context:component-scan base-package="spring_introduction"/>
+
 </beans>
