@@ -14,10 +14,6 @@ public class Person {
         this.pet = pet;
     }
 
-//    public Pet getPet() {
-//        return pet;
-//    }
-
     @Autowired
     public void setPet(Pet pet) {
         this.pet = pet;
